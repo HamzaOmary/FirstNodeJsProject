@@ -1,6 +1,3 @@
-
-
-
 const readline = require('readline').createInterface({
     input: process.stdin,
     output: process.stdout
@@ -26,6 +23,14 @@ function simplerCalculator(x, y, operation) {
     }
 }
 
+
+// const startTime = Date.now(); // Get the current timestamp in milliseconds
+// const duration = 30 * 60 * 1000; // 30 minutes to ==> milliseconds
+
+// while (Date.now() - startTime < duration) {
+//     console.log('Loop finished after 30 minutes.');
+
+
 readline.question('Enter the value of x: ', (x) => {
     readline.question('Enter the value of y: ', (y) => {
         readline.question('Enter the operation (+, -, *, /): ', (operation) => {
@@ -44,4 +49,8 @@ readline.question('Enter the value of x: ', (x) => {
             readline.close();
         });
     });
-});
+ });
+
+//  //small delay (wait 100 milliseconds between iterations) to avoid overwhelming the CPU
+//   await new Promise(resolve => setTimeout(resolve, 100));
+// }
